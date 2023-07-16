@@ -1,0 +1,512 @@
+:root {
+  box-sizing: border-box;
+
+        
+        --items: 3; // змінна для зберігання кількостелементів в одному рядку сітки
+        --indent: 30px; // змінні для зберігання значення відступу між елементами
+                
+   
+    /* ---- */
+
+/* Container */
+.container {
+        margin: 0 auto; /* (центрує) */
+        width: 1158px;
+        padding: 0 15px;
+        /* (відступи, в фігмі можна побачити, якщо сітку вімкнути) */
+        }
+
+/* Щоб зображеня не з`їжджали направо */
+ul, ol {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+}
+
+
+       /**
+          |============================
+          | Flexbox grid
+          |============================
+        */
+       .card-set {
+               display: flex;
+               flex-wrap: wrap;
+               gap: var(--indent);
+       }
+
+       .card-set-item {
+               flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+       }
+
+/* Font */
+--primary-font: Roboto, sans-serif;
+
+/* Colors */
+/* --main-dark-cl: 
+--main-light-cl: */
+--ocean-cl: #404BBF;
+--main-light-bg: #ffffff;
+--light-bg: #e5e5e5;
+--main-dark-bg: #2e2f42;
+--link-cl: #434455;
+--string-web-cl: #4D5AE5;
+--studio-down-cl: #F4F4FD;
+
+/* Others */
+/* from our tutor Yaroslav - true hidding of some elements */
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+                
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+     //   You can add these:
+        
+         outline: 0;
+         outline-offset: 0;
+        }
+
+          /*       Если надо скрыть элементы от скрин-ридеров и убрать выделение табом и мышкой: .is-hidden {
+                        visibility: hidden;
+                        pointer-events: none;
+                        position: absolute;
+                } */
+       
+}
+
+
+/* 
+  |---------------------------
+  |Common styles
+  |---------------------------
+*/
+
+body {
+    
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    
+    color: #434455;
+    background-color: var(--main-light-bg);
+}
+
+/* Reset */
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+
+.list, ul, ol {
+    list-style: none;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn,
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.hero {
+    background-color: var(--main-dark-bg);
+}
+
+.link {
+    color: var(--link-cl);
+    text-decoration: none;
+}
+
+/* 
+|---------------------------
+|Header styles
+|---------------------------
+ */
+ .header {}
+
+ .header-nav {
+    background: var(--main-light-bg);
+ }
+
+ .logo {
+        font-family: Raleway, sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color:#4D5AE5;
+ }
+
+ .web {
+         color: var(--string-web-cl);
+ }
+ 
+ .studio, .studio-header {
+        color: var(--main-dark-bg);
+ }
+
+ .header-list {                
+                font-family: Roboto, sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.02em;
+                color: var(--main-dark-bg);                
+ }
+
+ 
+.header-list .header-link:active
+.header-link:hover,
+.header-link:focus 
+ {
+        color: var(--ocean-cl);
+}
+
+
+
+ .header-link {
+       color: var(--main-dark-bg);        
+ }
+
+ .address {
+    font-style: normal;
+ }
+
+ .header-contacts {}
+
+
+ .header-item,
+  {
+    list-style: none;
+    text-decoration: none;
+    color: currentColor;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    color: var(--link-cl);
+ }
+
+ /* для 3-й домашки */
+ /*  */
+
+ .header-contacts:active,
+ .header-item:active,
+ .header-contacts:hover,
+ .header-contacts:focus,
+ .header-item:hover,
+ .header-item:focus {
+     color: var(--ocean-cl);
+ }
+
+ /* 
+|---------------------------
+|Hero styles
+|---------------------------
+ */
+ .hero {}
+
+ .hero-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--main-light-bg);
+ }
+
+ .hero-btn {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        
+	display: flex;
+        align-items: center;
+        letter-spacing: 0.04em;
+        color: var(--main-light-bg);       
+	flex-direction: row;
+        align-items: flex-start;
+        padding: 16px 32px;
+        gap: 10px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;        
+
+	
+        background: var(--string-web-cl);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        
+        text-align: center;
+ }
+
+ .hero-btn:hover,
+ .hero-btn:focus {
+        background-color: var(--ocean-cl);       
+        /*  */
+        /*  */
+        text-align: center;
+ }
+
+/* 
+|---------------------------
+|Describe styles
+|--------------------------- 
+*/
+
+.section {}
+
+.describe {}
+
+.strategy {}
+
+.name {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;    
+        color: var(--main-dark-bg);
+}
+
+.item {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;    
+        color: var(--link-cl);
+}
+
+
+
+.strategy-item {}
+
+.punctuality {}
+
+.punctuality-item {}
+
+.diligence {}
+
+.diligence-item {}
+
+.technologies {}
+
+.technologies-item {}
+
+/* 
+|---------------------------
+|Doing styles
+|--------------------------- 
+*/
+
+.section {}
+
+.doing,
+.doing-title {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--main-dark-bg);
+
+}
+
+/* 
+|---------------------------
+|Team styles
+|--------------------------- 
+*/
+
+.section {}
+
+.team {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--main-dark-bg);
+        background-color: var(--studio-down-cl);
+}
+
+.team-item {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;        
+}
+
+.team-list {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--main-dark-bg);
+        background-color: var(--main-light-bg);
+}
+
+.team-worker {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--link-cl);
+        background-color: var(--main-light-bg);
+}
+
+.our-team {
+        background-color: var(--main-light-bg);
+}
+
+.homan, .application {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;        
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--main-dark-bg);
+        background-color: var(--main-light-bg);
+	flex: none;
+        order: 0;
+        flex-grow: 0;
+        
+}
+
+.mark {}
+
+.product {}
+
+.worker, .type-application {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--link-cl);
+        background-color: var(--main-light-bg);
+	flex: none;
+        order: 1;
+        flex-grow: 0;
+        
+}
+
+.tom {}
+
+.frontend {}
+
+.camila {}
+
+.marketing {}
+
+.daniel {}
+
+.ui-designer {}
+
+/* 
+|---------------------------
+|Footer  styles
+|--------------------------- 
+*/
+
+ .footer {
+    background: var(--main-dark-bg);
+ }
+
+ .logo {}
+
+ .web {}
+
+ .studio-down {
+        Color: var(--studio-down-cl);
+ }
+
+ .footer-description {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--studio-down-cl);
+	width: 264px;
+        
+ }
+
+
+ /* PORTFOLIO PAGE */
+
+/* 
+|---------------------------
+|Button section styles
+|--------------------------- 
+*/
+ 
+.btn-filter {
+        color: var(--string-web-cl);
+        background-color: var(--studio-down-cl);
+        text-align: center;
+        
+        /* Button Text */
+        font-size: 16px;
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+}
+
+.btn-filter:hover, 
+.btn-filter:focus {
+        color: var(--main-light-bg);
+        background-color: var(--ocean-cl);
+}
+
+/* Можливо так - це підказка з чату у figma */
+.btn-press {
+ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+ 0px 2px 1px rgba(0, 0, 0, 0.08),
+ 0px 2px 2px rgba(0, 0, 0, 0.12);
+ 
+}
+
+.btn-press:active {
+    background-color: var(--ocean-cl);
+}
+

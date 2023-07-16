@@ -1,0 +1,380 @@
+:root {
+    /* box-sizing: border-box; */
+
+
+/* Font */
+--primary-font: Roboto, sans-serif;
+
+/* Colors */
+/* --main-dark-cl: 
+--main-light-cl: */
+--ocean-cl: #404BBF;
+--main-light-bg: #ffffff;
+--light-bg: #e5e5e5;
+--main-dark-bg: #2e2f42;
+--link-cl: #434455;
+--string-web-cl: #4D5AE5;
+--studio-down-cl: #F4F4FD;
+
+/* Others */
+}
+
+
+/* 
+  |---------------------------
+  |Common styles
+  |---------------------------
+*/
+
+body {
+    /* font-family: Raleway, Roboto, sans-serif; */
+    /* font-family: var(--primary-font); */
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    /* color: var(--light-bg); */
+    color: #434455;
+    background-color: var(--main-light-bg);
+}
+
+/* Reset */
+/* h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+} */
+
+
+.list, ul, ol {
+    list-style: none;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn,
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.hero {
+    background-color: var(--main-dark-bg);
+}
+
+.link {
+    color: var(--link-cl);
+    text-decoration: none;
+}
+
+
+/* 
+|---------------------------
+|Header styles
+|---------------------------
+ */
+ .header {}
+
+ .header-nav {
+    background: var(--main-light-bg);
+ }
+
+ .logo {
+        font-family: Raleway, sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color:#4D5AE5;
+ }
+
+ .web {
+         color: var(--string-web-cl);
+ }
+ 
+ .studio, .studio-header {
+        color: var(--main-dark-bg);
+ }
+
+ .header-list {                
+                font-family: Roboto, sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.02em;
+                color: var(--main-dark-bg);                
+ }
+
+
+ /* .header-list .header-link:active */
+.header-link:hover,
+.header-link:focus 
+ {
+        color: var(--ocean-cl);
+}
+
+
+
+ .header-link {
+       color: var(--main-dark-bg); 
+ }
+
+ .header-contacts {}
+
+
+ .header-mail,
+ .header-tel {
+    list-style: none;
+    text-decoration: none;
+    color: currentColor;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    color: var(--link-cl);
+ }
+
+ /* для 3-й домашки */
+ /* .header-mail:active,
+ .header-tel:active {
+    color: var(--ocean-cl);
+ }  */
+
+ .header-contacts:hover,
+ .header-contacts:focus,
+ .header-mail:hover,
+ .header-mail:focus,
+ .header-tel:hover,
+ .header-tel:focus {
+     color: var(--ocean-cl);
+ }
+
+ /* 
+|---------------------------
+|Hero styles
+|---------------------------
+ */
+ .hero {}
+
+ .hero-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--main-light-bg);
+ }
+
+ .hero-btn {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        /* display: flex; */
+        /* align-items: center; */
+        letter-spacing: 0.04em;
+        color: var(--main-light-bg);       
+        /* flex-direction: row;
+        align-items: flex-start; */
+        /* padding: 16px 32px; */
+        /* gap: 10px; */
+        /* flex: none; */
+        /* order: 0; */
+        /* flex-grow: 0; */
+        background: var(--string-web-cl);
+        /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px; */
+        text-align: center;
+ }
+
+ .hero-btn:hover,
+ .hero-btn:focus {
+        background-color: var(--ocean-cl);       
+        /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+        /* border-radius: 4px; */
+        text-align: center;
+ }
+
+
+/* 
+|---------------------------
+|Describe styles
+|--------------------------- 
+*/
+
+.section {}
+
+.describe {}
+
+.strategy {}
+
+.name {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;    
+        color: var(--main-dark-bg);
+}
+
+.item {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;    
+        color: var(--link-cl);
+}
+
+.strategy-item {}
+
+.punctuality {}
+
+.punctuality-item {}
+
+.diligence {}
+
+.diligence-item {}
+
+.technologies {}
+
+.technologies-item {}
+
+
+/* 
+|---------------------------
+|Doing styles
+|--------------------------- 
+*/
+
+.section {}
+
+.doing {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--main-dark-bg);
+}
+
+/* 
+|---------------------------
+|Team styles
+|--------------------------- 
+*/
+
+.section {}
+
+.team {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--main-dark-bg);
+}
+
+.homan, .picture {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;        
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--main-dark-bg);
+        /* flex: none; */
+        /* order: 0; */
+        /* flex-grow: 0; */
+}
+
+.mark {}
+
+.product {}
+
+.worker, .type-application {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--link-cl);
+        /* flex: none;
+        /* order: 1; 
+        flex-grow: 0; */
+}
+
+.tom {}
+
+.frontend {}
+
+.camila {}
+
+.marketing {}
+
+.daniel {}
+
+.ui-designer {}
+
+/* 
+|---------------------------
+|Footer  styles
+|--------------------------- 
+*/
+
+ .footer {
+    background: var(--main-dark-bg);
+ }
+
+ .logo {}
+
+ .web {}
+
+ .studio-down {
+        Color: var(--studio-down-cl);
+ }
+
+ .footer-description {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--studio-down-cl);
+        /* width: 264px; */
+ }
+
+
+ /* PORTFOLIO PAGE */
+
+/* 
+|---------------------------
+|Button section styles
+|--------------------------- 
+*/
+ 
+/* Можливо так - це підказка з чату у figma */
+.btn-press {
+ /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+ 0px 2px 1px rgba(0, 0, 0, 0.08),
+ 0px 2px 2px rgba(0, 0, 0, 0.12); */
+}
+
+.btn-press:active {
+    background-color: var(--ocean-cl);
+}
