@@ -712,18 +712,6 @@ text-align: start;
         border: 1px solid var(--string-web-cl);
 } */
 
-/* .strategy-name {
-        display: flex;
-        width: 264px;
-        flex-direction: column;
-        color: var(--main-dark-bg);
-        font-size: 20px;
-        font-family: Roboto;
-        font-weight: 500;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        margin-bottom: 8px;
-} */
 
 .first-item {
         /* width: calc((100% - 72px) / 4); */
