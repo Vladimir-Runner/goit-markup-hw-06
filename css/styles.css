@@ -700,6 +700,15 @@ text-transform: capitalize;
     }
 }
 
+.item {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--link-cl);
+}
+
 .strategy-item {
         font-family: Roboto;
 color: #434455;
@@ -710,9 +719,6 @@ color: #434455;
 text-align: start;
     font-weight: 500;
 }
-
-
-/* WORK WORK WORK WORK WORK WORK WORK WORK WORK WORK */
 
 
 /* SVG================================= SVG */
@@ -737,35 +743,7 @@ text-align: start;
         letter-spacing: 0.32px;
 }
 
-.strategy-item {}
 
-
-
-
-.item {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;    
-        color: var(--link-cl);
-}
-
-
-
-.strategy-item {}
-
-.punctuality {}
-
-.punctuality-item {}
-
-.diligence {}
-
-.diligence-item {}
-
-.technologies {}
-
-.technologies-item {}
 
 /* 
 |---------------------------
@@ -796,11 +774,6 @@ text-align: start;
 }
 
 
-
-/* .doing-list {
-        display: flex;
-        gap: 24px;        
-} */
 
 /* 
 |---------------------------
@@ -947,10 +920,6 @@ text-align: start;
 }
 
 
-
-
-
-
 .homan, .application {
         font-family: 'Roboto', sans-serif;
         font-style: normal;
@@ -966,24 +935,6 @@ text-align: start;
         flex-grow: 0;
         margin-bottom: 8px;
 }
-
-
-
-.product {}
-
-
-
-
-
-.frontend {}
-
-
-
-.marketing {}
-
-
-
-.ui-designer {}
 
 
 /* 4 DZ */
@@ -1036,7 +987,6 @@ text-align: start;
 }
 
 
-
 .box-clients-icons {
         width: calc((100% - 2 * 8px) / 2);
         height: 88px;
@@ -1085,8 +1035,6 @@ text-align: start;
 .link-clients-icons:active .clients-icon{
         fill: var(--ocean-cl);
 }
-
-
 
 
 /* 
@@ -1149,20 +1097,6 @@ text-align: start;
                  margin-right: 120px;
          }
  }
-
-
- /* .footer-logo {
-        margin-right: 120px;
- } */
-
-
- /* 2 work 2 work 2 work 2 work 2 work 2 work 2 work 2 work 2 work*/
-
- /* .logo-footer {
-        display: inline-block;
-        margin-bottom: 16px;  
-        padding: 0;      
- } */
 
  .logo-link-footer {
          font-family: "Raleway", sans-serif;
